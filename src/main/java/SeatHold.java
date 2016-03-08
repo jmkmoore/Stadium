@@ -25,6 +25,8 @@ public class SeatHold {
     }
 
     public int getHoldId(){
+        if(mySeats.isEmpty())
+            return -1;
         return mySeats.get(0);
     }
 

@@ -63,7 +63,7 @@ public class SeatHoldTest {
         sectionTest.addSeat(4, 10, 3);
         assertEquals(3, sectionTest.getStartSeat());
         sectionTest = new SeatHold();
-        sectionTest.addSeat(40,10,3);
-        assertEquals(3, sectionTest.getStartSeat());
+        sectionTest.addSeat(40,10,90);
+        assertEquals(90, sectionTest.getStartSeat());
     }
 }
