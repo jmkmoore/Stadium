@@ -54,7 +54,6 @@ public class ServiceTest {
         freshStadium.buildSection(3, 10, 20);
         freshStadium.buildSection(4, 25, 20);
         SeatHold seat = freshStadium.findAndHoldSeats(5, Optional.of(0), Optional.of(3), "jmkmoore@gmail.com");
-        System.out.println(seat.getHoldId());
 
         String confirmCode = freshStadium.reserveSeats(0, "jmkmoore@gmail.com");
         assertEquals(("jmkmoore@gmail.com"+0).hashCode() +"", confirmCode);

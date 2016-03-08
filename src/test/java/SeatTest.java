@@ -32,6 +32,7 @@ public class SeatTest {
 
     @Test
     public void testChangeToReserve() throws Exception {
+        System.out.println("Running seat lifetime tests");
         Seat reserveSeat = new Seat();
         new Thread(reserveSeat).start();
         reserveSeat.changeToReserve(10101);
@@ -46,6 +47,7 @@ public class SeatTest {
 
     @Test
     public void testIsLocked() throws Exception {
+        System.out.println("Running lock duration tests");
         Seat freshSeat = new Seat();
         new Thread(freshSeat).start();
         freshSeat.holdSeat(10101);

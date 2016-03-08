@@ -75,6 +75,8 @@ public class SeatSection {
     }
 
     public boolean reserveSeats(SeatHold reservation){
+        if(reservation.getHoldId() == -1)
+            return false;
         int row = reservation.getRow();
         int startSeat = reservation.getStartSeat();
         int numOfSeats = reservation.getNumOfSeats();
